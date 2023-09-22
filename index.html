@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Biblioteca Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="styles/pg_index.css">
+
+    <title>Explorador de Países com Mapa</title>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+    />
+</head>
+
+<body>
+    <!-- Conteúdo principal -->
+    <div class="container-main">
+        <!-- Container de pesquisa -->
+        <div class="search-container">
+            <!-- Wrapper da pesquisa -->
+            <div class="search-wrapper" id="search-wrapper">
+                <!-- Campo de entrada de texto para inserir o nome do país -->
+                <input type="text" id="country-inp" placeholder="Digite o País em Inglês..."/>
+                <!-- Botão para acionar a pesquisa -->
+                <button id="search-btn">Pesquisar</button>
+            </div>
+            <!-- Container de informações do país -->
+            <div class="country-info">
+                <!-- Resultado da pesquisa será exibido aqui -->
+                <div id="result"></div>
+            </div>
+        </div>
+        <!-- Container do mapa -->
+        <div class="map-container">
+            <!-- Mapa será exibido aqui -->
+            <div id="map" class="map"></div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer"><p>Desenvolvido por Thiago Moreira Rocha</p></div>
+    
+    <!-- Script JavaScript -->
+    <script src="js/restapi.js"></script>
+</body>
+</html>
